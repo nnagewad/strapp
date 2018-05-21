@@ -151,8 +151,8 @@ body {
 }
 
 .columns.is-multiline.is-gapless > .column:nth-child(3) {
-  background-color: #333333;
   order: 4;
+  background-color: #333333;
 }
 
 .columns.is-multiline.is-gapless > .column:nth-child(4) {
@@ -188,17 +188,16 @@ body {
   background-color: #E8BC9F;
 }
 
-.contact .title,
-.label.is-medium {
-  color: #333333;
-}
-
 .column > small {
   margin-top: 10px;
 }
 
 .asterisk {
   color: #be3030;
+}
+
+.form-submit-message {
+  height: 357px;
 }
 
 .control.has-icons-right svg {
