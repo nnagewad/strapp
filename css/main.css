@@ -96,6 +96,12 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+:root {
+  --primary: #000000;
+  --secondary: #f5cfb2;
+  --accent: #333333;
+}
+
 html {
   background-color: #fafafb
 }
@@ -105,6 +111,14 @@ body {
   margin-left: auto;
   margin-right: auto;
   font-family: "usual",sans-serif;
+}
+
+.has-text-black {
+  color: var(--primary) !important;
+}
+
+.button.is-black {
+  background-color: var(--primary);
 }
 
 .hero {
@@ -122,7 +136,7 @@ body {
 }
 
 .button.is-black:hover {
-  background-color: #333333;
+  background-color: var(--accent);
 }
 
 .columns.is-multiline.is-gapless .column {
@@ -136,13 +150,13 @@ body {
 }
 
 .columns.is-multiline.is-gapless > .column:first-child {
-  background-color: #f5cfb2;
+  background-color: var(--secondary);
   order: 1;
 }
 
 .columns.is-multiline.is-gapless > .column:first-child .title,
 .columns.is-multiline.is-gapless > .column:first-child .subtitle {
-  color: #333333;
+  color: var(--accent);
 }
 
 .columns.is-multiline.is-gapless > .column:nth-child(2) {
@@ -153,7 +167,7 @@ body {
 
 .columns.is-multiline.is-gapless > .column:nth-child(3) {
   order: 4;
-  background-color: #333333;
+  background-color: var(--accent);
 }
 
 .columns.is-multiline.is-gapless > .column:nth-child(4) {
@@ -186,7 +200,7 @@ body {
 }
 
 .contact {
-  background-color: #f5cfb2;
+  background-color: var(--secondary);
 }
 
 .column > small {
@@ -207,11 +221,11 @@ body {
 }
 
 input[type="email"]:valid ~ .icon.is-right svg {
-  fill: #333333;
+  fill: var(--accent);
 }
 
 .input:focus {
-  border-color: #333333;
+  border-color: var(--accent);
   border-width: 2px;
 }
 
@@ -230,21 +244,21 @@ input[type="email"]:valid ~ .icon.is-right svg {
 
 .columns.content > .column:last-child a {
   order: 1;
-  color: #ffffff;
+  color: white;
   text-decoration: underline;
 }
 
 .columns.content > .column:last-child a:hover {
-  color: #f5cfb2;
+  color: var(--secondary);
   text-decoration: none;
 }
 
 .columns.is-mobile.is-centered svg {
-  fill: #ffffff;
+  fill: white;
 }
 
 .columns.is-mobile.is-centered a:hover svg {
-  fill: #f5cfb2;
+  fill: var(--secondary);
 }
 
 /* ==========================================================================
