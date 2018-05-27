@@ -122,8 +122,20 @@ body {
 }
 
 .hero {
-  background-image:url(https://images.unsplash.com/photo-1491902872224-17e8a4c88f10?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e674ac0b1e43316e460861b46b44ffca&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb);
-  background-size: cover;
+  background-image: url(../img/hero-img.jpg);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-color: white;
+  background-position: left center;
+}
+
+@media all and (-webkit-min-device-pixel-ratio : 1.5),
+all and (-o-min-device-pixel-ratio: 3/2),
+all and (min--moz-device-pixel-ratio: 1.5),
+all and (min-device-pixel-ratio: 1.5) {
+  .hero {
+    background-image: url(../img/hero-img@2x.jpg);
+  }
 }
 
 .hero-content {
