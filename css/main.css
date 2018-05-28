@@ -129,34 +129,6 @@ body {
   background-position: left center;
 }
 
-@media all and (-webkit-min-device-pixel-ratio : 1.5),
-       all and (-o-min-device-pixel-ratio: 3/2),
-       all and (min--moz-device-pixel-ratio: 1.5),
-       all and (min-device-pixel-ratio: 1.5) {
-  .hero {
-    background-image: url(../img/hero-img@2x.jpg);
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .hero {
-    background-image: none;
-  }
-  .hero-body {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .hero-body .hero-content {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  .hero-body img {
-    width: 768px;
-  }
-}
-
 .hero-content {
   max-width: 392px;
   margin: 0 auto;
@@ -192,8 +164,10 @@ body {
 
 .columns.is-multiline.is-gapless > .column:nth-child(2) {
   order: 2;
-  background-image: url(https://images.unsplash.com/photo-1429186219543-755f5bfeeef8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=846477978673d8f2055eee0272290106&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb);
+  background-image: url(../img/bodyShot.jpg);
   background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .columns.is-multiline.is-gapless > .column:nth-child(3) {
@@ -201,37 +175,33 @@ body {
   background-color: var(--accent);
 }
 
-.columns.is-multiline.is-gapless > .column:nth-child(4) {
-  order: 3;
-  background-image: url(https://images.unsplash.com/photo-1504771693173-a34d2580d7e4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8566531438334f7f4bd55d40c8b0a5cf&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb);
-  background-position: center center;
-}
-
-.columns.is-multiline.is-gapless > .column:nth-child(5) {
-  order: 5;
-  background-color: white;
-}
-
 .columns.is-multiline.is-gapless > .column:last-child {
-  order: 6;
-  background-image: url(https://images.unsplash.com/photo-1506558046893-715532492912?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4e6284faa3402cc1248c93a2193f9f01&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb);
+  order: 3;
+  background-image: url(../img/buckle.jpg);
   background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .column-written-content {
   max-width: 440px;
-}
-
-.column-written-content {
   padding: 1.5rem;
+  margin: 0 auto;
 }
 
 .underline {
   text-decoration: underline;
 }
 
+.section.herstory {
+  background-image:url('../img/herstory.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .contact {
-  background-color: var(--secondary);
+  background-color: white;
 }
 
 .column > small {
@@ -245,6 +215,10 @@ body {
 .form-submit-message {
   height: 336px;
   margin-top: 21px;
+}
+
+.control.has-icons-right {
+  margin-bottom: 1.5rem;
 }
 
 .control.has-icons-right svg {
@@ -292,6 +266,59 @@ input[type="email"]:valid ~ .icon.is-right svg {
   fill: var(--secondary);
 }
 
+@media all and (-webkit-min-device-pixel-ratio : 1.5),
+       all and (-o-min-device-pixel-ratio: 3/2),
+       all and (min--moz-device-pixel-ratio: 1.5),
+       all and (min-device-pixel-ratio: 1.5) {
+  .hero {
+    background-image: url(../img/hero-img@2x.jpg);
+  }
+  .columns.is-multiline.is-gapless > .column:nth-child(2) {
+    background-image: url(../img/bodyShot@2x.jpg);
+  }
+  .columns.is-multiline.is-gapless > .column:last-child {
+    background-image: url(../img/buckle@2x.jpg);
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1087px) {
+  .section.is-large {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    background-image: none;
+  }
+  .hero-body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .hero-body .hero-content {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .hero-body img {
+    width: 768px;
+  }
+
+  .section.is-large {
+    background: #E7E7E7;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  .herstory-info {
+    max-width: 440px;
+    padding: 0 1.5rem 1.5rem;
+    margin: 0 auto;
+  }
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
