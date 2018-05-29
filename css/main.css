@@ -98,7 +98,7 @@ textarea {
    ========================================================================== */
 :root {
   --primary: #000000;
-  --secondary: #f5cfb2;
+  --secondary: #FAE7D9;
   --accent: #333333;
 }
 
@@ -149,7 +149,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 360px;
+  min-height: 400px;
 }
 
 .columns.is-multiline.is-gapless > .column:first-child {
