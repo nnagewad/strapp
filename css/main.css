@@ -103,7 +103,8 @@ textarea {
 }
 
 html {
-  background-color: #fafafb
+  background-color: #fafafb;
+  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1600 - 320)));
 }
 
 body {
@@ -306,7 +307,11 @@ input[type="email"]:valid ~ .icon.is-right svg {
     width: 768px;
   }
 
-  .section.is-large {
+  .columns.is-multiline.is-gapless .column {
+    min-height: 425px;
+  }
+
+  .herstory.section.is-large {
     background: #E7E7E7;
     padding-left: 0;
     padding-right: 0;
@@ -315,7 +320,7 @@ input[type="email"]:valid ~ .icon.is-right svg {
 
   .herstory-info {
     max-width: 440px;
-    padding: 0 1.5rem 1.5rem;
+    padding: 5.5rem 1.5rem 7rem;
     margin: 0 auto;
   }
 }
