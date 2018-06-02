@@ -149,7 +149,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 400px;
+  min-height: 525px;
 }
 
 .columns.is-multiline.is-gapless > .column:first-child {
