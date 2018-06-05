@@ -97,7 +97,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 :root {
-  --primary: #000000;
+  --primary: #0A0A0A;
   --secondary: #FAE7D9;
   --accent: #333333;
 }
@@ -112,14 +112,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   font-family: "usual",sans-serif;
-}
-
-.has-text-black {
-  color: var(--primary) !important;
-}
-
-.button.is-black {
-  background-color: var(--primary);
 }
 
 .hero {
@@ -140,7 +132,8 @@ body {
 }
 
 .button.is-black:hover {
-  background-color: var(--accent);
+  background-color: var(--secondary);
+  color: var(--primary);
 }
 
 .columns.is-multiline.is-gapless .column {
