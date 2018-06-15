@@ -118,6 +118,10 @@ body {
   font-size: 3.675rem !important;
 }
 
+.is-size-2 {
+  font-size: 2.95rem !important;
+}
+
 .title {
   font-weight: 800;
   word-break: inherit;
@@ -134,6 +138,10 @@ body {
 .hero-content {
   max-width: 392px;
   margin: 0 auto;
+}
+
+.letter-spacing {
+  letter-spacing: 10px;
 }
 
 .hero-content a {
@@ -215,6 +223,10 @@ body {
 
 .column > small {
   margin-top: 10px;
+}
+
+form {
+  margin-top: 15px;
 }
 
 .asterisk {
