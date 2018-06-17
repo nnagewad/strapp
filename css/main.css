@@ -112,6 +112,15 @@ body {
   margin-left: auto;
   margin-right: auto;
   font-family: "usual",sans-serif;
+  line-height: 1.25;
+}
+
+.navbar-brand.navbar-item {
+  padding-top: 2rem;
+}
+
+.navbar-item img {
+  max-height: 3rem;
 }
 
 .is-size-1 {
@@ -125,12 +134,14 @@ body {
 .title {
   font-weight: 800;
   word-break: inherit;
+  line-height: 1.05;
+  letter-spacing: 0.05rem;
 }
 
 .hero {
   background-image: url(../img/hero-img.jpg);
   background-repeat: no-repeat;
-  background-size: 55%;
+  background-size: 50%;
   background-color: white;
   background-position: left center;
 }
@@ -361,6 +372,10 @@ input[type="email"]:valid ~ .icon.is-right svg {
     max-width: 440px;
     padding: 5.5rem 1.5rem 7rem;
     margin: 0 auto;
+  }
+
+  .margin-zero-auto-mobile {
+      margin: 0 auto;
   }
 }
 /* ==========================================================================
