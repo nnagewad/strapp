@@ -281,35 +281,35 @@ input[type="email"]:valid ~ .icon.is-right svg {
 }
 
 .footer {
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 
-.columns.content > .column:first-child {
-  order: 2;
+.column svg {
+  fill: white;
 }
 
-.columns.content > .column:last-child svg {
-  vertical-align: middle;
-  margin-right: 5px;
+.column a:hover svg {
+  fill: var(--secondary);
 }
 
-.columns.content > .column:last-child a {
-  order: 1;
+.has-text-centered .is-inline-block a {
   color: white;
   text-decoration: underline;
 }
 
-.columns.content > .column:last-child a:hover {
+.has-text-centered .is-inline-block a:hover {
   color: var(--secondary);
   text-decoration: none;
 }
 
-.columns.is-mobile.is-centered svg {
-  fill: white;
+p.is-inline-block {
+  margin-left: 10px;
 }
 
-.columns.is-mobile.is-centered a:hover svg {
-  fill: var(--secondary);
+.columns:not(:last-child),
+.has-text-centered.email,
+.has-text-centered.ccfa {
+  margin-bottom: calc(2rem - .75rem) !important;
 }
 
 @media all and (-webkit-min-device-pixel-ratio : 1.5),
