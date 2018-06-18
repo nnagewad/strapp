@@ -141,14 +141,18 @@ body {
 .hero {
   background-image: url(../img/hero-img.jpg);
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 48.75%;
   background-color: white;
-  background-position: left center;
+  background-position: left top 60%;
 }
 
 .hero-content {
   max-width: 392px;
   margin: 0 auto;
+}
+
+.column.is-hidden-tablet {
+  padding: 2.5rem 0 0;
 }
 
 .letter-spacing {
