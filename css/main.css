@@ -120,7 +120,7 @@ body {
 }
 
 .navbar-item img {
-  max-height: 3rem;
+  max-height: 2.25rem;
 }
 
 .is-size-1 {
@@ -303,7 +303,7 @@ input[type="email"]:valid ~ .icon.is-right svg {
 }
 
 p.is-inline-block {
-  margin-left: 10px;
+  margin-left: .5rem;
 }
 
 .columns:not(:last-child),
