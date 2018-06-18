@@ -292,12 +292,12 @@ input[type="email"]:valid ~ .icon.is-right svg {
   fill: var(--secondary);
 }
 
-.has-text-centered .is-inline-block a {
+.footer a {
   color: white;
   text-decoration: underline;
 }
 
-.has-text-centered .is-inline-block a:hover {
+.footer a:hover {
   color: var(--secondary);
   text-decoration: none;
 }
@@ -307,8 +307,7 @@ p.is-inline-block {
 }
 
 .columns:not(:last-child),
-.has-text-centered.email,
-.has-text-centered.ccfa {
+.has-text-centered.footer-content {
   margin-bottom: calc(2rem - .75rem) !important;
 }
 
