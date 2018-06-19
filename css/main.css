@@ -115,7 +115,8 @@ body {
   line-height: 1.25;
 }
 
-.navbar-brand.navbar-item {
+.navbar-brand.navbar-item,
+a.navbar-item {
   padding-top: 2rem;
 }
 
@@ -138,7 +139,20 @@ body {
   letter-spacing: 0.05rem;
 }
 
-.hero {
+.hero.is-dark a.navbar-item:hover {
+  background-color: transparent;
+}
+
+.hero.is-dark a.navbar-item:hover svg {
+  fill: var(--secondary);
+}
+
+.hero.is-dark a.navbar-item svg {
+  fill: white;
+  max-height: 1.75rem;
+}
+
+.hero-background-image {
   background-image: url(../img/hero-img.jpg);
   background-repeat: no-repeat;
   background-size: 48.75%;
@@ -296,14 +310,30 @@ input[type="email"]:valid ~ .icon.is-right svg {
   fill: var(--secondary);
 }
 
+.content a,
+.footer a {
+  text-decoration: underline;
+}
+
+.content a {
+  color: var(--primary);
+}
+
 .footer a {
   color: white;
-  text-decoration: underline;
+}
+
+.content a:hover,
+.footer a:hover {
+  text-decoration: none;
+}
+
+.content a:hover {
+  color: var(--accent);
 }
 
 .footer a:hover {
   color: var(--secondary);
-  text-decoration: none;
 }
 
 p.is-inline-block {
@@ -319,7 +349,7 @@ p.is-inline-block {
        all and (-o-min-device-pixel-ratio: 3/2),
        all and (min--moz-device-pixel-ratio: 1.5),
        all and (min-device-pixel-ratio: 1.5) {
-  .hero {
+  .hero-background-image {
     background-image: url(../img/hero-img@2x.jpg);
   }
   .columns.is-multiline.is-gapless > .column:nth-child(2) {
@@ -331,7 +361,8 @@ p.is-inline-block {
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1087px) {
-  .navbar-brand.navbar-item {
+  .navbar-brand.navbar-item,
+  a.navbar-item {
     padding-left: 1.5rem;
   }
 
